@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fa-solid {
+    color: red;
+    font-size: 20px;
+    /* background-color: black; */
+}
+
+.err-message {
+    text-align: right;
+    font-size: 10px;
+    color: red;
+    padding: 10px 15px 40px 20px;
+    font-style: italic;
+}
+
+.red-b {
+    border-color: red !important;
+}
+
+body {
+    padding: 80px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Text Container */
+
+.text-container {
+    color: #fff;
+}
+
+.text-container h1 {
+    /* width: 450px; */
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.text-container p {
+    font-size: 16px;
+}
+
+/* Form Container */
+.trial-btn {
+    background: hsl(248, 32%, 49%);
+    padding: 15px;
+    width: 30rem;
+    border: none;
+    border-radius: 10px;
+    color: azure;
+    font-size: 15px;
+    font-weight: lighter;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.356);
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.form-control {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.first-name {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 21rem;
+    height: 2rem;
+}
+
+.inputs-icons {
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.inputs-icons:hover {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+.last-name {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 21rem;
+    height: 2rem;
+}
+
+.inputs-icons {
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.inputs-icons:hover {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+.inputs-icons i{
+    visibility: hidden;
+}
+
+.email {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 21rem;
+    height: 2rem;
+}
+
+.inputs-icons {
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.inputs-icons:hover {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+.password {
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 21rem;
+    height: 2rem;
+}
+
+.inputs-icons {
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.inputs-icons:hover {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+.claim-btn {
+    color: azure;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    background: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    width: 25rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+}
+
+.claim-btn:hover {
+    background-color: hsla(154, 59%, 51%, 0.568);
+    color: #fff;
+}
+
+.terms {
+    font-size: 10px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.terms-colored {
+    font-weight: bold;
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+
+/* Responsive CSS */
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        display: grid;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .text-container {
+        padding: 10px 100px;
+        margin-bottom: -80px;
+    }
+
+    .text-container h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .form-container {
+        display: grid;
+        padding: 50px 70px;
+        margin-top: 60px;
+    }
+
+    .trial-btn {
+        width: 20rem;
+        text-align: center;
+        display: grid;
+        padding: 20px;
+    }
+
+    .form-control {
+        width: 20rem;
+        height: fit-content;
+    }
+
+    .inputs-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+        /* padding: auto; */
+    }
+    
+    .claim-btn {
+        padding: 25px;
+        width: 15rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .terms {
+        margin-top: -47px;
+    }
+}

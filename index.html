@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+  />
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <section class="text-container">
+    <h1>Learn to code by <br> watching others</h1>
+    <p>
+      See how experienced developers solve problems in real-time. <br>
+      Watching scripted tutorials is great, but understanding how <br>
+      developers think is invaluable.
+    </p>
+  </section>
+
+  <section class="form-container">
+    <button class="trial-btn">
+      <span class="bold">Try it free 7 days</span>
+      then $20/mo. thereafter
+    </button>
+
+    <form class="form-control" id="form-control">
+      <label class="inputs-icons">
+        <input type="text" class="first-name" placeholder="First Name">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </label>
+       <p class="err-message" id="error"></p>
+
+      <label class="inputs-icons">
+        <input type="text" class="last-name" placeholder="Last Name">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </label>
+      <p class="err-message" id="error2"></p>
+
+      <label class="inputs-icons">
+        <input type="text" class="email" placeholder="Email Address">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </label>
+      <p class="err-message" id="error3"></p>
+
+      <label class="inputs-icons">
+        <input type="password" class="password" placeholder="Password" autocomplete="on">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </label>
+      <p class="err-message" id="error4"></p>
+      
+      <button type="submit" class="claim-btn">Claim your free trial</button>
+      <br>
+      <div class="terms">
+        By clicking the button, you are agreeing to our
+        <a href="!#" class="terms-colored">Terms and Services</a>
+      </div>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
